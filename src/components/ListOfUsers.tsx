@@ -16,9 +16,9 @@ const users: {
 }[] = [
 	{
 		id: "1",
-		name: "Peter Doe",
-		email: "peterdoe@redux.com",
-		github: "peterdoe",
+		name: "Pablo Nunez",
+		email: "pnunfe@gmail.com",
+		github: "PavDev3",
 	},
 	{
 		id: "2",
@@ -75,7 +75,19 @@ export function ListOfUsers() {
 					{users.map((item) => (
 						<TableRow key={item.name}>
 							<TableCell>{item.id}</TableCell>
-							<TableCell>{item.name}</TableCell>
+							<TableCell style={{ display: "flex", alignItems: "center" }}>
+								<img
+									style={{
+										width: "30px",
+										height: "30px",
+										borderRadius: "50%",
+										marginRight: "10px",
+									}}
+									src={`https://unavatar.io/github/${item.github}`}
+									alt="Avatar"
+								/>
+								{item.name}
+							</TableCell>
 							<TableCell>{item.email}</TableCell>
 							<TableCell>{item.github}</TableCell>
 							<TableCell>Acciones</TableCell>
