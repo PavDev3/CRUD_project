@@ -56,6 +56,12 @@ const users: {
 		email: "joeSachs@redux.com",
 		github: "joeSachs",
 	},
+	{
+		id: "8",
+		name: "Daniela Pena",
+		email: "danielape@gmail.com",
+		github: "danielape",
+	},
 ];
 
 export function ListOfUsers() {
